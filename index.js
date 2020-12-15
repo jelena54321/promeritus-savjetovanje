@@ -42,5 +42,4 @@ function changeLanguage() {
     }
 
     window.location.href = url;
-    location.reload();
 }
