@@ -1,8 +1,10 @@
 strings = {
     about_us_page_title: "About Us | Promeritus savjetovanje",
     vision_and_mission_page_title: "Vision and Mission | Promeritus savjetovanje",
+    services_page_title: "Services | Promeritus savjetovanje",
 
     about_us_title: "+ ABOUT US",
+    services_title: "+ SERVICES",
 
     home: "Home",
     about_us: "About Us",
@@ -29,5 +31,12 @@ strings = {
     vision_description: "Through the creation and transmitting of the innovative knowledge, we would like to improve healthcare and to become recognized partner in the region.",
 
     mission_subtitle: "MISSION",
-    mission_description: "Our mission is to challenge each opportunity by combining innovation; high quality standards and team of exceptional professionals in order to deliver the right result that brings lasting value to our clients."
+    mission_description: "Our mission is to challenge each opportunity by combining innovation; high quality standards and team of exceptional professionals in order to deliver the right result that brings lasting value to our clients.",
+    
+    pharmacoeconomic_analysis: "Pharmacoeconomic Analysis",
+    medical_affairs: "Medical Affairs",
+    regulatory_affairs: "Regulatory Affairs",
+    second_medical_opinion: "Second Medical Opinion",
+
+    read_more: "Read More >"
 }

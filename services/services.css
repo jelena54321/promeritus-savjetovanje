@@ -1,0 +1,50 @@
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+
+    width: 100%;
+    height: 380px;
+}
+
+.service {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-content {
+    text-align: center;
+
+    width: 60%;
+    height: 60%;
+
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+
+    color: #3906A9;
+}
+
+.service-content button {
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+
+    color: #3906A9;
+
+    outline: none;
+    border: none;
+
+    background-color: transparent;
+}
+
+.service-content button:hover {
+    color: #FFCF40;
+}
+
+.service-content p {
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
