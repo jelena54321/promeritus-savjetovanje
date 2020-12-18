@@ -1,5 +1,6 @@
 strings = {
     about_us_page_title: "About Us | Promeritus savjetovanje",
+    vision_and_mission_page_title: "Vision and Mission | Promeritus savjetovanje",
 
     about_us_title: "+ ABOUT US",
 
@@ -22,5 +23,11 @@ strings = {
     High quality health services imply partnership between patients and healthcare professionals. That contributes in satisfaction and assurance on both sides and establishment of profound understanding and confidence. Our objective is to streamline health organizations for improving their efficiencies and health practice standards for meeting their quality assurance compliance obligations.
     
     Company, in accordance with the client’s needs, works with many individuals who are recognized and known in its area of operation. We do insist on team work. By utilizing different aspects in a team, more creative solutions are generated, leading to better results and making sure that our customer service and quality of care meets our high standards.
-    `
+    `,
+
+    vision_subtitle: "VISION",
+    vision_description: "Through the creation and transmitting of the innovative knowledge, we would like to improve healthcare and to become recognized partner in the region.",
+
+    mission_subtitle: "MISSION",
+    mission_description: "Our mission is to challenge each opportunity by combining innovation; high quality standards and team of exceptional professionals in order to deliver the right result that brings lasting value to our clients."
 }

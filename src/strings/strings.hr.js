@@ -1,5 +1,6 @@
 strings = {
     about_us_page_title: "O nama | Promeritus savjetovanje",
+    vision_and_mission_page_title: "Vizija i misija | Promeritus savjetovanje",
 
     about_us_title: "+ O NAMA",
 
@@ -22,5 +23,11 @@ strings = {
     Kako kvalitetna zdravstvena usluga podrazumijeva partnerski odnos između bolesnika i zdravstvenog djelatnika, što doprinosi zadovoljstvu i sigurnosti na obje strane i uspostavi potpunog povjerenja i razumijevanja, naš cilj je usmjeravati zdravstvene djelatnike i ustanove prema učinkovitoj zdravstvenoj skrbi u skladu sa zahtjevima naprednog sustava osiguranja kvalitete.
     
     Naša tvrtka, u skladu s potrebama klijenata, surađuje s vrhunskim stručnjacima iz raznih područja. Pri tome inzistiramo na timskom radu. Koristeći se različitostima unutar tima, stvaramo više kreativnih rješenja koja dovode i do boljih rezultata. Time osiguravamo visoko kvalitetnu skrb i uslugu korisnicima u skladu s našim kriterijima.
-    `
+    `,
+
+    vision_subtitle: "VIZIJA",
+    vision_description: "Kroz stvaranje i prenošenje inovativnih spoznaja želimo unaprijediti brigu o zdravlju te postati priznat partner struke u regiji.",
+
+    mission_subtitle: "MISIJA",
+    mission_description: "Naša misija je pristupiti svakom izazovu koristeći inovativnost, visoke standarde kvalitete i tim iznimnih stručnjaka kako bi isporučili pravi rezultat koji donosi trajnu vrijednost za naše klijente."
 }

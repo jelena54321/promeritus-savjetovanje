@@ -3,7 +3,7 @@ $(document).ready(pageLoaded);
 linker = {
     "index.html": "home",
     "about_us.html": "about-us",
-    "vission_and_mission.html": "vision-and-mission",
+    "vision_and_mission.html": "vision-and-mission",
     "services.html": "services",
     "contact.html": "contact"
 }
@@ -12,8 +12,9 @@ function pageLoaded() {
     showHeader();
 
     let script = document.createElement("script");
-    script.src = `src/strings/strings.${getCurrentLanguage()}.js`;
-    script.onload = loadStrings;
+    script.id = "strings"
+    script.src = `../src/strings/strings.${getCurrentLanguage()}.js`;
+    script.addEventListener("load", loadStrings);
     document.head.appendChild(script);
 }
 
@@ -43,7 +44,7 @@ function showHeader() {
     <div class="header-content">
 
             <div class="logo-container">
-                <img width="180px" src="src/images/logo.png" alt="logo">
+                <img width="180px" src="../src/images/logo.png" alt="logo">
             </div>
 
             ${getPageMenu()}
@@ -73,7 +74,8 @@ function getPageMenu() {
         `
         <button 
             id='${linker[file]}-menu-item' 
-            class=${currentPage == file ? 'selected-menu-item' : 'unselected-menu-item'} 
+            class=${currentPage == file ? 'selected-menu-item' : 'unselected-menu-item'}
+            onclick='redirectTo("${file}");'
             type='button'>
         </button>
         `
@@ -92,4 +94,9 @@ function changeLanguage() {
     }
 
     window.location.href = url;
+}
+
+function redirectTo(file) {
+    let baseURL = `../${linker[file]}/${file}`;
+    window.location.href = getCurrentLanguage() == "en" ? baseURL + "?lang=en" : baseURL;
 }
