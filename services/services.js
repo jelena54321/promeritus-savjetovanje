@@ -17,6 +17,7 @@ function loadServicesStrings() {
 
     document.getElementById("services-title").innerText += strings.services_title;
     getServicesList();
+    getServices();
 }
 
 function getServicesList() {
@@ -28,7 +29,7 @@ function getServicesList() {
             <div class="service-content">
                 <img src="../src/images/${service}.png" height=80px>
                 <p class="service-title">${strings[services[service]]}</p>
-                <button type="button">${strings["read_more"]}</button>
+                <button type="button" onclick="scrollToService('${service}')">${strings["read_more"]}</button>
             </div>
         </div>
         `;
@@ -41,31 +42,60 @@ function getServices() {
     let html = "";
     let i = 0;
 
-    for (service in services) {
+    for (let service in services) {
         let imageHTML = 
         `
         <div class="centered-image">
-            <img src="../src/images/.png">
+            <img src="../src/images/${service}-details.png">
         </div>
         `;
 
         let titleHTML =
         `
         <div class="centered-content-container">
-            <div class="centered-content"></div>
+            <div class="centered-content">${strings[services[service]].toUpperCase()}</div>
         </div>
         `;
 
         html +=
         `
         <div id="${service}-anchor" class="split-in-two-container">
-            <div class="centered-image">
-                <img src="../src/images/${service}-details.png">
-            </div>
-            <div class="centered-content-container">
-                <div class="centered-content"></div>
+            ${i % 2 == 0 ? imageHTML + titleHTML : titleHTML + imageHTML}
+        </div>
+        <p class="services-description">${strings[services[service] + "_description"]}</p>
+        `;
+
+        i += 1;
+
+        html += "<div class='service-table'>";
+        let j = 1;
+        let list = strings[services[service] + "_list"];
+        for (let index in list) {
+            html += 
+            `
+            <p class="order-number">${j >= 10 ? j  : "0" + j}</p>
+            <div class="vertical-separator"></div>
+            <p class="service-table-element-content">${list[index]}</p>
+            `;
+
+            j += 1;
+        }
+        html += "</div>";
+
+        html += `
+        <div class='service-footer'>
+            <div class='service-footer-content'>
+                <button class="link-to-contact" onclick="" type="button">${strings.link_to_contact}</button>
+                <br><br>
+                ${strings[services[service] + "_attribution"]}
             </div>
         </div>
         `;
     }
+
+    document.getElementById("services").innerHTML += html;
+}
+
+function scrollToService(service) {
+    document.getElementById(`${service}-anchor`).scrollIntoView({ behavior: 'smooth', block: 'center' });
 }

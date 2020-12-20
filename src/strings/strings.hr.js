@@ -38,5 +38,76 @@ strings = {
     regulatory_affairs: "Regulatorni poslovi",
     second_medical_opinion: "Drugo medicinsko mišljenje",
 
-    read_more: "Više informacija >"
+    read_more: "Više informacija >",
+
+    pharmacoeconomic_analysis_description:
+    `
+    Farmakoekonomske studije nadopunjuju klinička ispitivanja novih lijekova i liječenja uzimajući u obzir troškove. Njihova analiza se ne odnosi samo na učinkovitost novih lijekova i medicinskih tretmana, nego i na troškove tog liječenja u usporedbi s njihovim prednostima. Prema procjeni troškova i koristi, farmakoekonomska analiza pomaže u ocjenjivanju učinka medicinskih postignuća.
+    <br><br>
+    Promeritus savjetovanje nudi izradu farmakoekonomskih studija za potrebe uvrštenja proizvoda na listu lijekova Hrvatskog zavoda za zdravstveno osiguranje (HZZO) koje uključuju:
+    `,
+    medical_affairs_description:
+    `
+    Promeritus savjetovanje u okviru medicinskih poslova daje savjete i usluge vezane uz klinički razvoj proizvoda i farmakovigilanciju.
+    <br><br>
+    Osigurali smo stručnu, organizacijsku i tehničku podršku za:
+    `,
+    regulatory_affairs_description:
+    `    
+    Regulatorni poslovi uključuju aktivnosti, savjete i usluge potrebne za dobivanje, obnovu ili izmjene odobrenja za stavljanje gotovog lijeka u promet, hrane za posebne medicinske potrebe i dodataka prehrani te upis u očevidnik medicinskih proizvoda.
+    <br><br>
+    U skladu s važećim regulatornim zahtjevima u Republici Hrvatskoj, svojim klijentima nudimo:
+    `,
+    second_medical_opinion_description:
+    `
+    Drugo medicinsko mišljenje može zadovoljiti važnu emocionalnu potrebu, kao i definirati stvarne medicinske potrebe i ciljeve liječenja. Pružajući dodatnu perspektivu o bolesti, drugo mišljenje može pomoći ustanoviti dodatne opcije, potvrditi dijagnozu, razjasniti planove liječenje pa čak i uhvatiti pogreške.
+    <br><br>
+    Promeritus savjetovanje omogućava jedinstveno rješenje za potrebe zdravstvene skrbi bolesnika pod nazivom “DRUGI doktor”. Naša usluga pruža mogućnosti savjetovanja pojedincima i obiteljima koristeći prednosti sveobuhvatnog, visoko individualiziranog i stručnog pristupa bolesti. U provedbi naše usluge, surađujemo s brojnim liječnicima i drugim zdravstvenim profesijama kako bi omogućili informacije o bolesti i preporuke o liječenju u skladu s najnovijim medicinskim saznanjima.
+    <br><br>
+    Usluga osim mišljenja i preporuke mogu uključivati mnoštvo različitih informacija:
+    `,
+
+    pharmacoeconomic_analysis_list: [
+        "Pretraživanje stručne literature", 
+        "Analizu prikupljenih epidemioloških i dostupnih javno zdravstvenih podataka",
+        "Definiranje populacije osiguranika kojima je lijek namijenjen",
+        "Procjene veličine tržišta i rasta tržišta",
+        "Izradu modela – tijek bolesti i stanja s medicinskim postupcima",
+        "Procjenu troškova",
+        "Analizu troškovne učinkovitosti",
+        "Analizu utjecaja na proračun HZZO-a",
+        "Analizu osjetljivosti",
+        "Izradu Stručnog izvješća"
+    ],
+    medical_affairs_list: [
+        "Izradu dokumentacije za provođenje kliničkih ispitivanja",
+        "Statističku analizu i obradu prikupljenih podataka",
+        "Izradu Izvješća o kliničkom ispitivanju",
+        "Pisanje stručnog/znanstvenog rada – priprema za objavu u stručnim publikacijama",
+        "Izradu Kliničkog mišljenja o lijeku",
+        "Obavljanje poslova lokalne odgovorne osobe za farmakovigilanciju",
+        "Izradu ili prilagodbu Detaljnog opisa farmakovigilancijskog sustava",
+        "Izradu Plana upravljanja rizicima",
+        "Izradu Periodičkog izvješća o neškodljivosti lijeka (PSUR)"
+    ],
+    regulatory_affairs_list: [
+        "Izradu registracijske dokumentacije",
+        "Prijevode informacija o proizvodu i pripadajuće dokumentacije",
+        "Provjeru razumljivosti Upute o lijeku",
+        "Nadzor tijeka registracijskog postupka"
+    ],
+    second_medical_opinion_list: [
+        "Podatke o prirodi bolesti",
+        "Mogućnosti liječenja i tretmana u skladu sa novijim kliničkim saznanjima i istraživanjima",
+        "Moguće nuspojave i komplikacije povezane s određenim liječenjem",
+        "Informacije o dostupnim kliničkim ispitivanjima i kriteriji za sudjelovanje u njima",
+        "Upućivanje na medicinska društva, udruge, grupe za podršku, zajednice za raspravu, itd."
+    ],
+
+    pharmacoeconomic_analysis_attribution: `<span>Photo by <a href="https://unsplash.com/@myriamzilles?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Myriam Zilles</a> on <a href="https://unsplash.com/s/photos/pills?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>`,
+    medical_affairs_attribution: `<span>Photo by <a href="https://unsplash.com/@goumbik?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Lukas Blazek</a> on <a href="https://unsplash.com/s/photos/report?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>`,
+    regulatory_affairs_attribution: `<span>Photo by <a href="https://unsplash.com/@sctgrhm?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Scott Graham</a> on <a href="https://unsplash.com/s/photos/law?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>`,
+    second_medical_opinion_attribution: `<span>Photo by <a href="https://unsplash.com/@jonathanborba?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jonathan Borba</a> on <a href="https://unsplash.com/s/photos/doctor?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>`,
+
+    link_to_contact: "Ukoliko trebate više informacija, kontaktirajte nas preko mrežnog obrasca ili telefonom >"
 }

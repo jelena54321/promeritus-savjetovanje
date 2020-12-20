@@ -52,16 +52,3 @@
 .description {
     font-size: 17px;
 }
-
-.centered-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden
-}
-
-.centered-image img {
-    flex-shrink: 0;
-    max-width: 150%;
-    max-height: 150%
-}
