@@ -1,0 +1,87 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.slideshow-container {
+    min-height: 100%;
+}
+
+.slide {
+    min-height: 100vh;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#first-slide {
+    background-image: url("../src/images/home_slide_01.jpg");
+    background-position: top;
+}
+
+#second-slide {
+    background-image: url("../src/images/home_slide_02.jpg");
+    background-position: center;
+}
+
+#third-slide {
+    background-image: url("../src/images/home_slide_03.jpg");
+    background-position: center;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.8s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from { opacity: .4 }
+    to { opacity: 1 }
+}
+
+@keyframes fade {
+    from { opacity: .4 }
+    to { opacity: 1 }
+}
+
+.attribution {
+    color: white;
+    
+    font-family: 'Nunito', sans-serif;
+    font-size: 10px;
+
+    width: fit-content;
+
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+.attribution a {
+    color: white;
+}
+
+.first-home-logo, .second-home-logo, .third-home-logo {
+    width: 320px;
+    
+    z-index: 10;
+
+    position: absolute;
+}
+
+.first-home-logo {
+    top: 50px;
+    right: 80px;
+}
+
+.second-home-logo {
+    left: 100px;
+    top: 80px;
+}
+
+.third-home-logo {
+    left: 200px;
+    top: 40px;
+}

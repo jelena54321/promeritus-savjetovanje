@@ -1,7 +1,7 @@
 $(document).ready(pageLoaded);
 
 linker = {
-    "index.html": "home",
+    "home.html": "home",
     "about_us.html": "about-us",
     "vision_and_mission.html": "vision-and-mission",
     "services.html": "services",
@@ -9,12 +9,18 @@ linker = {
 }
 
 function pageLoaded() {
-    showHeader();
+    if (document.getElementById("header") != null) {
+        showHeader();
+    }
 
     let script = document.createElement("script");
     script.id = "strings"
     script.src = `../src/strings/strings.${getCurrentLanguage()}.js`;
-    script.addEventListener("load", loadStrings);
+
+    if (document.getElementById("header") != null) {
+        script.addEventListener("load", loadStrings);
+    }
+
     document.head.appendChild(script);
 }
 
