@@ -1,10 +1,13 @@
 strings = {
+    home_page_title: "Promeritus savjetovanje",
     about_us_page_title: "About Us | Promeritus savjetovanje",
     vision_and_mission_page_title: "Vision and Mission | Promeritus savjetovanje",
     services_page_title: "Services | Promeritus savjetovanje",
+    contact_page_title: "Contact | Promeritus savjetovanje",
 
     about_us_title: "+ ABOUT US",
     services_title: "+ SERVICES",
+    contact_title: "+ CONTACT",
 
     home: "Home",
     about_us: "About Us",
@@ -110,5 +113,14 @@ strings = {
     regulatory_affairs_attribution: `<span>Photo by <a href="https://unsplash.com/@sctgrhm?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Scott Graham</a> on <a href="https://unsplash.com/s/photos/law?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>`,
     second_medical_opinion_attribution: `<span>Photo by <a href="https://unsplash.com/@jonathanborba?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jonathan Borba</a> on <a href="https://unsplash.com/s/photos/doctor?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>`,
 
-    link_to_contact: "If you wish to know more information, please contact us over webform or by phone >"
+    link_to_contact: "If you wish to know more information, please contact us over webform or by phone >",
+
+    contact_us_form_title: "Contact Us",
+    contact_us_form_first_name: "First Name",
+    contact_us_form_last_name: "Last Name",
+    contact_us_form_email: "Email",
+    contact_us_form_phone: "Phone",
+    contact_us_form_address: "Address",
+    contact_us_form_message: "Your message here...",
+    contact_us_form_send: "SEND"
 }

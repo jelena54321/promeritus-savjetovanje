@@ -1,1 +1,1 @@
-$(document).ready(function() { window.location.href = "about-us/about_us.html"; });
+$(document).ready(function() { window.location.href = "home/home.html"; });

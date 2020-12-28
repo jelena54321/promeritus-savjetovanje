@@ -23,6 +23,8 @@ function showSlides() {
 }
 
 function loadHomeStrings() {
+    document.title = strings.home_page_title;
+
     let language = getCurrentLanguage().toUpperCase();
     let otherLanguage = (language == "HR" ? "EN" : "HR").toUpperCase();
         

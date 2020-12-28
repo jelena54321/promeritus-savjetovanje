@@ -1,10 +1,13 @@
 strings = {
+    home_page_title: "Promeritus savjetovanje",
     about_us_page_title: "O nama | Promeritus savjetovanje",
     vision_and_mission_page_title: "Vizija i misija | Promeritus savjetovanje",
     services_page_title: "Usluge | Promeritus savjetovanje",
+    contact_page_title: "Kontakt | Promeritus savjetovanje",
 
     about_us_title: "+ O NAMA",
     services_title: "+ USLUGE",
+    contact_title: "+ KONTAKT",
 
     home: "Početna",
     about_us: "O nama",
@@ -109,5 +112,14 @@ strings = {
     regulatory_affairs_attribution: `<span>Photo by <a href="https://unsplash.com/@sctgrhm?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Scott Graham</a> on <a href="https://unsplash.com/s/photos/law?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>`,
     second_medical_opinion_attribution: `<span>Photo by <a href="https://unsplash.com/@jonathanborba?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Jonathan Borba</a> on <a href="https://unsplash.com/s/photos/doctor?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>`,
 
-    link_to_contact: "Ukoliko trebate više informacija, kontaktirajte nas preko mrežnog obrasca ili telefonom >"
+    link_to_contact: "Ukoliko trebate više informacija, kontaktirajte nas preko mrežnog obrasca ili telefonom >",
+
+    contact_us_form_title: "Kontaktiraj nas",
+    contact_us_form_first_name: "Ime",
+    contact_us_form_last_name: "Prezime",
+    contact_us_form_email: "Email",
+    contact_us_form_phone: "Telefon",
+    contact_us_form_address: "Adresa",
+    contact_us_form_message: "Vaš upit ovdje...",
+    contact_us_form_send: "POŠALJI"
 }
