@@ -1,6 +1,13 @@
 var slideIndex = 0;
 
-$(document).ready(showSlides);
+$(document).ready(homePageLoaded);
+
+function homePageLoaded() {
+    let script = document.getElementById("strings");
+    script.addEventListener("load", loadHomeStrings);
+
+    showSlides();
+}
 
 function showSlides() {
     let slides = document.getElementsByClassName("slide");
@@ -12,5 +19,17 @@ function showSlides() {
 
     slideIndex = (slideIndex + 1) % slides.length;
 
-    setTimeout(showSlides, 7000);
+    setTimeout(showSlides, 6000);
+}
+
+function loadHomeStrings() {
+    let language = getCurrentLanguage().toUpperCase();
+    let otherLanguage = (language == "HR" ? "EN" : "HR").toUpperCase();
+        
+    document.getElementById("first-selected-language").innerText += language;
+    document.getElementById("first-unselected-language").innerText += otherLanguage;
+    document.getElementById("second-selected-language").innerText += language;
+    document.getElementById("second-unselected-language").innerText += otherLanguage;
+    document.getElementById("third-selected-language").innerText += language;
+    document.getElementById("third-unselected-language").innerText += otherLanguage;
 }
