@@ -1,5 +1,8 @@
 $(document).ready(pageLoaded);
 
+pages = ["home", "about-us", "vision-and-mission", "services", "contact"]
+
+/*
 linker = {
     "home": "home",
     "about_us": "about-us",
@@ -7,6 +10,7 @@ linker = {
     "services": "services",
     "contact": "contact"
 }
+*/
 
 function pageLoaded() {
     if (document.getElementById("header") != null) {
@@ -75,13 +79,13 @@ function getPageMenu() {
         currentPageURL.substring(startIndex, endIndex);
 
     let html = "<div class='page-menu'>"
-    for (let file in linker) {
+    for (let page in pages) {
         html += 
         `
         <button 
-            id='${linker[file]}-menu-item' 
-            class=${currentPage == file ? 'selected-menu-item' : 'unselected-menu-item'}
-            onclick='redirectTo("${file}");'
+            id='${page}-menu-item' 
+            class=${currentPage == page ? 'selected-menu-item' : 'unselected-menu-item'}
+            onclick='redirectTo("${page}");'
             type='button'>
         </button>
         `
@@ -102,7 +106,7 @@ function changeLanguage() {
     window.location.href = url;
 }
 
-function redirectTo(file) {
-    let baseURL = `../${linker[file]}/${file}`;
+function redirectTo(page) {
+    let baseURL = `../${page}`;
     window.location.href = getCurrentLanguage() == "en" ? baseURL + "?lang=en" : baseURL;
 }
