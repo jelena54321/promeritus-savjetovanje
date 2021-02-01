@@ -1,11 +1,11 @@
 $(document).ready(pageLoaded);
 
 linker = {
-    "home.html": "home",
-    "about_us.html": "about-us",
-    "vision_and_mission.html": "vision-and-mission",
-    "services.html": "services",
-    "contact.html": "contact"
+    "home": "home",
+    "about_us": "about-us",
+    "vision_and_mission": "vision-and-mission",
+    "services": "services",
+    "contact": "contact"
 }
 
 function pageLoaded() {
