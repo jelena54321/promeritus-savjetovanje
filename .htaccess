@@ -1,2 +1,2 @@
 RewriteEngine On
-RewriteRule ^(\/promeritus-savjetovanje\/([^\.]+)) $1/$2.html [NC,L]
+RewriteRule ^promeritus-savjetovanje\/[^\/]+\/([^\/]+)\.html$ /$1 [NC,L]

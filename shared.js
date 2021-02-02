@@ -107,6 +107,6 @@ function changeLanguage() {
 }
 
 function redirectTo(page) {
-    let baseURL = `../${page}`;
+    let baseURL = `../${page}/${page}.html`;
     window.location.href = getCurrentLanguage() == "en" ? baseURL + "?lang=en" : baseURL;
 }
