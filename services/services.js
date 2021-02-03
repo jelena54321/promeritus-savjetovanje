@@ -27,7 +27,7 @@ function getServicesList() {
         `
         <div id="${service}" class="service">
             <div class="service-content">
-                <img src="../src/images/${service}.png" height=80px>
+                <img src="src/images/${service}.png" height=80px>
                 <p class="service-title">${strings[services[service]]}</p>
                 <button type="button" onclick="scrollToService('${service}')">${strings["read_more"]}</button>
             </div>
@@ -46,7 +46,7 @@ function getServices() {
         let imageHTML = 
         `
         <div class="centered-image">
-            <img src="../src/images/${service}-details.png">
+            <img src="src/images/${service}-details.png">
         </div>
         `;
 

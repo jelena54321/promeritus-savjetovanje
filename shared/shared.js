@@ -19,7 +19,7 @@ function pageLoaded() {
 
     let script = document.createElement("script");
     script.id = "strings"
-    script.src = `../src/strings/strings.${getCurrentLanguage()}.js`;
+    script.src = `src/strings/strings.${getCurrentLanguage()}.js`;
 
     if (document.getElementById("header") != null) {
         script.addEventListener("load", loadStrings);
@@ -54,7 +54,7 @@ function showHeader() {
     <div class="header-content">
 
             <div class="logo-container">
-                <img width="180px" src="../src/images/logo.png" alt="logo">
+                <img width="180px" src="src/images/logo.png" alt="logo">
             </div>
 
             ${getPageMenu()}
@@ -73,14 +73,15 @@ function showHeader() {
 function getPageMenu() {
     let currentPageURL = window.location.href;
     let startIndex = currentPageURL.lastIndexOf("/") + 1;
-    let endIndex = currentPageURL.indexOf("?");
+    let endIndex = currentPageURL.indexOf(".");
     let currentPage = endIndex == -1 ? 
-        currentPageURL.substring(startIndex) : 
+        currentPageURL.substring(startIndex, currentPageURL.indexOf("?")) : 
         currentPageURL.substring(startIndex, endIndex);
 
     let html = "<div class='page-menu'>"
     for (let i in pages) {
-        let page = pages[i]
+        let page = pages[i];
+
         html += 
         `
         <button 
@@ -108,6 +109,6 @@ function changeLanguage() {
 }
 
 function redirectTo(page) {
-    let baseURL = `../${page}`;
+    let baseURL = `${page}`;
     window.location.href = getCurrentLanguage() == "en" ? baseURL + "?lang=en" : baseURL;
 }
