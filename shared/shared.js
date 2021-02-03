@@ -73,9 +73,10 @@ function showHeader() {
 function getPageMenu() {
     let currentPageURL = window.location.href;
     let startIndex = currentPageURL.lastIndexOf("/") + 1;
-    let endIndex = currentPageURL.indexOf(".");
+    let potentialEndIndex = currentPageURL.indexOf("?");
+    let endIndex = potentialEndIndex == -1 ? -1 : potentialEndIndex;
     let currentPage = endIndex == -1 ? 
-        currentPageURL.substring(startIndex, currentPageURL.indexOf("?")) : 
+        currentPageURL.substring(startIndex) : 
         currentPageURL.substring(startIndex, endIndex);
 
     let html = "<div class='page-menu'>"
