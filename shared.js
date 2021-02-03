@@ -79,7 +79,8 @@ function getPageMenu() {
         currentPageURL.substring(startIndex, endIndex);
 
     let html = "<div class='page-menu'>"
-    for (let page in pages) {
+    for (let i in pages) {
+        let page = pages[i]
         html += 
         `
         <button 
@@ -107,6 +108,6 @@ function changeLanguage() {
 }
 
 function redirectTo(page) {
-    let baseURL = `../${page}/${page}.html`;
+    let baseURL = `../${page}`;
     window.location.href = getCurrentLanguage() == "en" ? baseURL + "?lang=en" : baseURL;
 }

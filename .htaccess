@@ -1,2 +1,3 @@
 RewriteEngine On
-RewriteRule ^promeritus-savjetovanje\/[^\/]+\/([^\/]+)\.html$ /$1 [NC,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ $1/$1.html [NC,L]
