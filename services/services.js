@@ -85,7 +85,7 @@ function getServices() {
         html += `
         <div class='service-footer'>
             <div class='service-footer-content'>
-                <button class="link-to-contact" onclick="" type="button">${strings.link_to_contact}</button>
+                <button class="link-to-contact" onclick="redirectTo('contact');" type="button">${strings.link_to_contact}</button>
                 <br><br>
                 ${strings[services[service] + "_attribution"]}
             </div>

@@ -2,16 +2,6 @@ $(document).ready(pageLoaded);
 
 pages = ["home", "about-us", "vision-and-mission", "services", "contact"]
 
-/*
-linker = {
-    "home": "home",
-    "about_us": "about-us",
-    "vision_and_mission": "vision-and-mission",
-    "services": "services",
-    "contact": "contact"
-}
-*/
-
 function pageLoaded() {
     if (document.getElementById("header") != null) {
         showHeader();
