@@ -119,8 +119,6 @@ strings = {
     contact_us_form_first_name: "First Name",
     contact_us_form_last_name: "Last Name",
     contact_us_form_email: "Email",
-    contact_us_form_phone: "Phone",
-    contact_us_form_address: "Address",
     contact_us_form_message: "Your message here...",
     contact_us_form_send: "SEND"
 }

@@ -118,8 +118,6 @@ strings = {
     contact_us_form_first_name: "Ime",
     contact_us_form_last_name: "Prezime",
     contact_us_form_email: "Email",
-    contact_us_form_phone: "Telefon",
-    contact_us_form_address: "Adresa",
     contact_us_form_message: "Vaš upit ovdje...",
     contact_us_form_send: "POŠALJI"
 }
