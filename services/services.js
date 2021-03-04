@@ -97,5 +97,5 @@ function getServices() {
 }
 
 function scrollToService(service) {
-    document.getElementById(`${service}-anchor`).scrollIntoView({ behavior: 'smooth', block: 'center' });
+    document.getElementById(`${service}-anchor`).scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
